@@ -1,0 +1,128 @@
+/*general settings */
+*: {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 1em;
+}
+
+.title {
+  text-align: center;
+  padding: 50px 0 20px;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 0;
+  color: #262626;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.container {
+  width: 50%;
+  height: 400px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.container .left {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+
+}
+
+.container .right {
+  float: right;
+  width: 50%;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.formBox {
+  width: 100%;
+  height: 400px;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.formBox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: rgb(71, 48, 122);
+}
+
+.formBox p:last-of-type {
+  font-weight: normal;
+}
+
+.formBox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formBox input[type="text"],
+.formBox input[type="password"]
+{
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(71, 48, 122);
+  height: 40px;
+}
+
+.formBox input[type="text"]:focus,
+.formBox input[type="password"]:focus
+{
+  border-bottom: 2px solid rgb(84, 202, 235);
+}
+
+.formBox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-sizing: border-box;
+  border: 2px solid #000;
+}
+
+.formBox input[type="submit"]:hover {
+  color: #000;
+  background: #fff;
+  border: 2px solid rgb(84, 202, 235);
+}
+
+.formBox a {
+  color: rgb(71, 48, 122);
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+}
+
+.formBox a:hover {
+  color: rgb(84, 202, 235);
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.rejected {
+  color: red;
+  font-weight: bold;
+}
